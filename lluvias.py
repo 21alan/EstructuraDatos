@@ -23,7 +23,7 @@ def main():
     for i in range(1985,2019,1):
         #print("año",i,"    ",a3.get_item(i-1985,e,m))
         suma+=a3.get_item(i-1985,e,m)
-    print("promedio: ",suma/34)
+    print("promedio mes y estado:",suma/34)
     print()
     #tarea3 estado
     suma=0.0
@@ -33,7 +33,7 @@ def main():
             if i!=0:
                 suma+=a3.get_item(j-1985,e,i)
         #print()
-    print("promedio",suma/408)
+    print("promedio estado:",suma/408)
     #tarea4 todo
     suma=0.0
     for k in range(1985,2019,1):
@@ -42,7 +42,7 @@ def main():
                 if j!=0:
                     #print("en el año",k,"en el mes",a3.get_item(k-1985,0,j),"en el estado",a3.get_item(a-1985,i,0),"precipitacion",a3.get_item(k-1985,i,j))
                     suma+=a3.get_item(k-1985,i,j)
-    print(suma/13056)
+    print("\npromedio de todo",suma/13056)
                     
 main()
     
